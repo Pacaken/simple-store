@@ -2,8 +2,12 @@
 /**
  * This is 404 page.
  */
-//here starts part of code for preparing data for view 
-$mainMessage = 'Requested page didn\'t exist!';
+//here starts part of code for preparing data for view
+$contentTitle = 'OOPS!';
+$mainMessage = '404 Page not found. You might want to check that URL again or head over to our <a href="/">homepage</a>.';
 
-//here we output data by phtml template
-require_once ($baseDir . '/template/phtml/404.phtml');
+$headTitle = '404 Page not found';
+$contentViewType = '2l';
+$contentTemplatePath = generateBlockTemplatePath('cms/404.phtml');
+
+require_once generateBlockTemplatePath('page.phtml');

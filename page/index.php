@@ -7,5 +7,10 @@ $wlcMessage = 'Hello!';
 $extPageLink = generateUrl( array('page'=>'sample', 'other_sample_parameter' =>'sample') );
 $nonExtPageLink = generateUrl( array('page'=>'not_exist_sample_page') );
 
-//here we output data by phtml template
-require_once ($baseDir . '/template/phtml/index.phtml');
+//there is a main standard variables that uses in displaying all PAGE blocks:
+$headTitle = 'Main Page';
+$contentViewType = '2l';
+$leftMenu = '';
+$contentTemplatePath = generateBlockTemplatePath('cms/index.phtml');
+$rightMenu = '';
+require_once generateBlockTemplatePath('page.phtml');

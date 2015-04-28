@@ -1,0 +1,47 @@
+body, html {
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    height:auto;
+    display: block;
+    background-color: #79B3EC;
+    background-image: none;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.home-logo {
+    /*float: left;*/
+    margin: 5px 16px 0px 10px;
+}
+
+footer {
+    width:100%;
+    height:auto;
+    display: block;
+    clear: both;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #79B3EC;
+    text-align:center;
+}
+
+.left-column {
+    width: 10%;
+    height:100%;
+    padding-left: 0px;
+    float: left;
+    clear: left;
+    text-align:center;
+}
+
+.content-two-columns-left{
+    width:100%;
+    height:70%;
+    margin:0 auto;
+}
+.content-two-columns-left .content{
+    padding-right: 0px;
+}

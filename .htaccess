@@ -1,0 +1,4 @@
+#redirect all to the index.php
+Options +FollowSymLinks
+RewriteEngine   on
+#RewriteRule .* index.php [L]

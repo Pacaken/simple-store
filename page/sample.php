@@ -7,4 +7,5 @@
  * To change this template use File | Settings | File Templates.
  */
 $data = 'sample page';
-require_once ($baseDir . '/template/phtml/sample.phtml');
+$contentTemplatePath = generateBlockTemplatePath('cms/sample.phtml');
+require_once generateBlockTemplatePath('page.phtml');
