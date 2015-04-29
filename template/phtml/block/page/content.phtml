@@ -2,29 +2,29 @@
 <?php case 3:?>
         <div id="content" class="content-three-columns">
         <?php
-        require_once 'content/left.phtml';
-        require_once 'content/content.phtml';
-        require_once 'content/right.phtml';
+        require_once generateBlockTemplatePath('page/content/left.phtml');
+        require_once generateBlockTemplatePath('page/content/content.phtml');
+        require_once generateBlockTemplatePath('page/content/right.phtml');
         break;
         ?>
 <?php case '2l':?>
         <div id="content" class="content-two-columns-left">
         <?php
-        require_once 'content/left.phtml';
-        require_once 'content/content.phtml';
+        require_once generateBlockTemplatePath('page/content/left.phtml');
+        require_once generateBlockTemplatePath('page/content/content.phtml');
         break;
         ?>
 <?php case '2r':?>
         <div id="content" class="content-two-columns-right">
         <?php
-        require_once 'content/content.phtml';
-        require_once 'content/right.phtml';
+        require_once generateBlockTemplatePath('page/content/content.phtml');
+        require_once generateBlockTemplatePath('page/content/right.phtml');
         break;
         ?>
 <?php case 1:?>
         <div id="content" class="content-one-column">
         <?php
-        require_once 'content/content.phtml';
+        require_once generateBlockTemplatePath('page/content/content.phtml');
         break;
         ?>
 <?php default:?>
