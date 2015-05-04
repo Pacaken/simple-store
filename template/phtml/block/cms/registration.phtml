@@ -1,4 +1,4 @@
-<form action="page/content/content.phtml" method="POST">
+<form action="<?php echo generateUrl(array('page'=>'process registration'));?>" method="POST">
     <label for="first_name">Your email: </label><input type="text" id="first_name" name="email" placeholder="Past Email"><br>
     <label for="password">Your password: </label><input type="password" id="password" password="password"><br>
     <input type="checkbox" value="1" name="remember">Remember<br>
