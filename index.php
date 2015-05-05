@@ -4,6 +4,7 @@
  *
  * Get parameters from request and try to find page.
  */
+session_start();
 $page = '';
 $baseDir = $_SERVER['DOCUMENT_ROOT'];
 $baseUrl = $_SERVER['SERVER_NAME'];

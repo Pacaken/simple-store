@@ -1,6 +1,10 @@
 <div class="left-column">
     <?php echo $leftMenu; ?>
     <a href="/">Home</a><br>
-    <a href="<?php echo /*'http://local.simple-store.com?page=registration'*/generateUrl(array('page'=>'registration'));?>">Registration page</a>
-    <a href="<?php echo generateUrl(array('page'=>'login'));?>">Login</a>
+    <?php if (!isset($_SESSION['is_customer_login']) || !$_SESSION['is_customer_login']): ?>
+        <a href="<?php echo /*'http://local.simple-store.com?page=registration'*/generateUrl(array('page'=>'registration'));?>">Registration page</a>
+        <a href="<?php echo generateUrl(array('page'=>'login'));?>">Login</a>
+    <?php else: ?>
+        <a href="<>">Log out</a>
+    <?php endif;?>
 </div>

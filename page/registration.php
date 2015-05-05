@@ -13,6 +13,5 @@ $contentViewType = '2l';
 //prepare path to block with registration form
 $leftMenu = '';
 $contentTemplatePath = generateBlockTemplatePath('cms/registration.phtml');
-
 //add page.phtml
 require_once generateBlockTemplatePath('page.phtml');
