@@ -5,6 +5,6 @@
         <a href="<?php echo /*'http://local.simple-store.com?page=registration'*/generateUrl(array('page'=>'registration'));?>">Registration page</a>
         <a href="<?php echo generateUrl(array('page'=>'login'));?>">Login</a>
     <?php else: ?>
-        <a href="<>">Log out</a>
+        <a href="<?php echo generateUrl(array('page'=>'log_out'));?>">Log out</a>
     <?php endif;?>
 </div>
