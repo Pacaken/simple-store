@@ -20,6 +20,10 @@ if (isset($_GET['page']) && !empty($_GET['page'])) {
 }
 
 if (!empty($page)) {
+    //connect standard functions
     require_once('lib/functions.php');
+    //connect mysql library:
+    require_once $baseDir . "/lib/data/mysql/functions.php";
+
     require_once($page);
 }
