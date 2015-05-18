@@ -1,8 +1,10 @@
 <form action="<?php echo generateUrl(array('page'=>'process_registration'));?>" method="POST">
+    <label for="firstname">First name: </label><input type="text" id="firstname" name="first_name" placeholder="Past First Name"><br>
+    <label for="lastname">Last name: </label><input type="text" id="lastname" name="last_name" placeholder="Past Last Name"><br>
     <label for="first_name">Your email: </label><input type="text" id="first_name" name="email" placeholder="Past Email"><br>
-    <label for="password">Your password: </label><input type="password" id="password" password="password"><br>
-    <input type="checkbox" value="1" name="remember">Remember<br>
+    <label for="password">Your password: </label><input type="password" id="password" name="password"><br>
+    <!--<input type="checkbox" value="1" name="remember">Remember<br>
     Female: <input type="radio" value="male" name="sex">Man | <input type="radio" value="female" name="sex"> Woman <br>
-    <textarea name="comments" rows="5" cols="40"></textarea><br>
-    <input type="submit" name="submit" value="To send">
+    <textarea name="comments" rows="5" cols="40"></textarea><br> -->
+    <input type="submit" name="submit" value="Registration">
 </form>

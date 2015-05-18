@@ -48,3 +48,25 @@ function getCustomerPasswordByMail($mail)
     }
     return $pwd;
 }
+/**
+ * Load  first_name, last_name, mail, password to the db
+ *
+ */
+function saveCustomer($firstName, $lastName, $email, $password)
+{
+    $result = mysql_query("INSERT INTO `simple-store`.`customers` (`first_name`, `last_name`, `mail`, `password`) VALUES ('$firstName', '$lastName', '$email', '$password');");
+    return $result;
+}
+/**
+ * Retrieve customer email
+ */
+function isCustomerExist($email)
+{
+    $result = false;
+    $name= mysql_query("SELECT `mail` FROM `customers` WHERE mail='{$email}'");
+    $result = mysql_fetch_assoc($name);
+    if (isset($result['mail'])) {
+        $result  = true;
+    }
+    return $result;
+}
