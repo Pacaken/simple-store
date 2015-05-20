@@ -70,3 +70,19 @@ function isCustomerExist($email)
     }
     return $result;
 }
+/*
+ * Load category id
+ *
+ * @param $categoryId
+ * @return mixed
+ */
+function loadCategoryName($categoryId)
+{
+    $name = '';
+    $query = mysql_query("SELECT `name` FROM `categories` WHERE entity_id={$categoryId}");
+    $data = mysql_fetch_assoc($query);
+    if (isset ($data['name'])) {
+        $name = $data['name'];
+    }
+    return $name;
+}
