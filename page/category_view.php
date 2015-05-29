@@ -4,6 +4,7 @@ $contentViewType = '2l';
 //prepare path to block with registration form
 $categoryId = NULL;
 $categoryView = null;
+$products = array();
 
 if (isset($_GET['category_id'])){
     $categoryView = $_GET['category_id'];
@@ -12,6 +13,7 @@ if (isset($_GET['category_id'])){
 if ($categoryView){
     openConnection();
     $categoryId = loadCategoryName($categoryView);
+    $products = loadCategoryProducts($categoryView);
 }
 
 if (!$categoryId){

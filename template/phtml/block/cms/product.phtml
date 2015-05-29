@@ -1,0 +1,6 @@
+<img src="<?php echo $image; ?>" />
+<H3> <?php  var_dump($product); ?><br> </H3>
+<form action="<?php echo generateUrl(array('page'=>'add_to_cart'));?>" method="POST">
+        <input type="hidden" name="product_id" value="<?php echo $productId?>" >
+        <input type="submit" name="submit" value="Add to cart">
+</form>
